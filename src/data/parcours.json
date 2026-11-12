@@ -1,0 +1,296 @@
+{
+  "personnages": [
+    {
+      "id": "gaby",
+      "nom": "Gaby",
+      "titre": "le gabian curieux",
+      "description": "Un goéland marseillais qui a survolé chaque recoin de la Région Sud. Bavard, curieux, et un peu chapardeur.",
+      "image": "personnages/gaby.svg",
+      "couleur": "#155E8B"
+    },
+    {
+      "id": "augustine",
+      "nom": "Augustine",
+      "titre": "la savonnière du Panier",
+      "description": "Il y a plus de cent ans, elle fabriquait du savon dans les ruelles du Panier. Elle en connaît chaque pierre (personnage inventé).",
+      "image": "personnages/augustine.svg",
+      "couleur": "#B9573A"
+    },
+    {
+      "id": "zephyr",
+      "nom": "Capitaine Zéphyr",
+      "titre": "le marin du Vieux-Port",
+      "description": "Bientôt : une enquête sur les quais, entre filets de pêche et navires d'antan.",
+      "image": "personnages/mystere.svg",
+      "couleur": "#0D2B3E",
+      "bientot": true
+    },
+    {
+      "id": "lili",
+      "nom": "Lili",
+      "titre": "la cigale des Calanques",
+      "description": "Bientôt : une balade nature, du bleu de la mer au blanc des falaises.",
+      "image": "personnages/mystere.svg",
+      "couleur": "#E3A63B",
+      "bientot": true
+    },
+    {
+      "id": "firmin",
+      "nom": "Firmin",
+      "titre": "le santonnier",
+      "description": "Bientôt : les petits métiers de Provence racontés par un artisan.",
+      "image": "personnages/mystere.svg",
+      "couleur": "#B9573A",
+      "bientot": true
+    },
+    {
+      "id": "celeste",
+      "nom": "Céleste",
+      "titre": "l'astronome",
+      "description": "Bientôt : une enquête à la tombée de la nuit, les yeux tournés vers les étoiles.",
+      "image": "personnages/mystere.svg",
+      "couleur": "#155E8B",
+      "bientot": true
+    }
+  ],
+  "parcours": [
+    {
+      "id": "hotel-de-region",
+      "titre": "Les secrets de l'Hôtel de Région",
+      "quartier": "Hôtel de Région",
+      "ville": "Marseille",
+      "duree_min": 25,
+      "distance_km": 0.3,
+      "difficulte": 1,
+      "interieur": true,
+      "personnage": "gaby",
+      "offert_par": "office-tourisme",
+      "sponsor_fin": "musee-navigateurs",
+      "bonus_fin": 30,
+      "accroche": "Un parcours express à l'intérieur du bâtiment : la Région Sud en 4 balises.",
+      "intro": "Salut ! Moi, c'est Gaby, gabian de profession et curieux de nature. J'ai survolé toute la Région Sud, des Alpes jusqu'à la mer… mais ce bâtiment, je ne l'ai jamais visité de l'intérieur ! Quatre balises sont cachées ici. Tu m'aides à les trouver ? Promis, je ne pique pas ton sandwich.",
+      "conclusion": "Bravo ! Tu connais maintenant les secrets de l'Hôtel de Région. La prochaine fois que tu croises un gabian, fais-lui un clin d'œil : c'est peut-être moi.",
+      "depart": {
+        "nom": "Hall d'entrée de l'Hôtel de Région",
+        "indication": "Place Jules Guesde, Marseille 2e. Entre dans le hall : la première balise n'est pas loin.",
+        "lat": 43.3019,
+        "lng": 5.3751,
+        "a_verifier": true
+      },
+      "etapes": [
+        {
+          "id": "hdr-hall",
+          "titre": "Le hall d'entrée",
+          "indice_lieu": "Tout commence là où tout le monde passe. Près de l'accueil, cherche une balise à hauteur des yeux… mais pas forcément juste devant toi.",
+          "balise": { "id": "hdr-hall", "code": "SUD6" },
+          "enigme": {
+            "type": "qcm",
+            "question": "Je survole souvent la Région Sud. Elle est composée de plusieurs départements. Combien ?",
+            "choix": ["4", "6", "8", "13"],
+            "bonne_reponse": 1,
+            "indice": "Plus de 4, moins de 8. Pense aux Bouches-du-Rhône, au Var, au Vaucluse… et aux Alpes, qui comptent pour trois !",
+            "a_verifier": false
+          },
+          "anecdote": {
+            "titre": "Une région, six départements",
+            "texte": "La Région Provence-Alpes-Côte d'Azur rassemble six départements, des sommets des Hautes-Alpes jusqu'aux plages du Var. Depuis 2017, elle se présente aussi sous le nom de « Région Sud ». C'est ici que siègent les élus qui s'occupent des lycées, des trains régionaux ou du soutien aux entreprises.",
+            "image": "images/hdr-hall.svg",
+            "a_verifier": true
+          }
+        },
+        {
+          "id": "hdr-couloir",
+          "titre": "Le grand couloir",
+          "indice_lieu": "Suis le couloir comme un bateau suit la côte. La balise se cache là où l'on passe sans jamais s'arrêter.",
+          "balise": { "id": "hdr-couloir", "code": "MAS2" },
+          "enigme": {
+            "type": "texte",
+            "question": "Il y a environ 2 600 ans, des marins grecs venus de Phocée ont fondé une ville ici. Quel nom lui ont-ils donné ?",
+            "reponses_acceptees": ["Massalia", "Massilia"],
+            "indice": "Le nom commence par M-A-S-S-A… et finit par « lia ».",
+            "a_verifier": false
+          },
+          "anecdote": {
+            "titre": "Le mariage de Gyptis et Protis",
+            "texte": "Selon la légende, vers 600 avant notre ère, le marin grec Protis débarque sur la côte le jour où la princesse Gyptis doit choisir son mari en lui tendant une coupe. Elle la tend à Protis, l'étranger ! En cadeau, le couple reçoit la colline où naîtra Massalia, la plus ancienne ville de France.",
+            "image": "images/hdr-couloir.svg",
+            "a_verifier": true
+          }
+        },
+        {
+          "id": "hdr-travail",
+          "titre": "L'espace de travail",
+          "indice_lieu": "Ici, on invente l'avenir à coups de post-it et de cafés. Cherche la balise près d'un endroit où l'on note ses idées.",
+          "balise": { "id": "hdr-travail", "code": "SAV7" },
+          "enigme": {
+            "type": "qcm",
+            "question": "Le savon de Marseille, c'est une affaire d'entrepreneurs depuis des siècles ! Sur les cubes traditionnels, un pourcentage est gravé. Lequel ?",
+            "choix": ["27 %", "50 %", "72 %", "100 %"],
+            "bonne_reponse": 2,
+            "indice": "C'est le nombre 27… à l'envers !",
+            "a_verifier": false
+          },
+          "anecdote": {
+            "titre": "Un savon réglementé par le roi",
+            "texte": "En 1688, sous Louis XIV, un édit de Colbert fixe des règles strictes pour fabriquer le savon de Marseille : des huiles végétales, et pas de graisses animales. Le « 72 % » gravé sur les cubes rappelle la part d'huile de la recette traditionnelle. Plus de trois siècles plus tard, des savonneries marseillaises tournent toujours !",
+            "image": "images/hdr-travail.svg",
+            "a_verifier": true
+          }
+        },
+        {
+          "id": "hdr-pitch",
+          "titre": "La salle du pitch",
+          "indice_lieu": "Dernière étape ! Va là où des équipes défendent leurs idées devant un jury. La balise t'attend près de la scène.",
+          "balise": { "id": "hdr-pitch", "code": "GAB9" },
+          "enigme": {
+            "type": "texte",
+            "question": "Dernière énigme, et elle parle de moi ! À Marseille, comment appelle-t-on ce grand oiseau blanc qui chaparde les frites sur le Vieux-Port ?",
+            "reponses_acceptees": ["gabian", "gabians"],
+            "indice": "Mon prénom est un indice : Gaby…",
+            "a_verifier": false
+          },
+          "anecdote": {
+            "titre": "Gabian, un mot provençal",
+            "texte": "« Gabian » vient du provençal. Les Marseillais désignent ainsi le goéland leucophée, ce grand oiseau aux pattes jaunes qu'on confond souvent avec la mouette, plus petite. Il niche sur les toits et sur les îles du Frioul… et il n'a peur de rien, surtout pas d'un pique-nique !",
+            "image": "images/hdr-pitch.svg",
+            "a_verifier": true
+          }
+        }
+      ]
+    },
+    {
+      "id": "panier",
+      "titre": "Les mystères du Panier",
+      "quartier": "Le Panier",
+      "ville": "Marseille",
+      "duree_min": 75,
+      "distance_km": 1.2,
+      "difficulte": 2,
+      "personnage": "augustine",
+      "offert_par": "musee-navigateurs",
+      "sponsor_fin": "librairie-boussole",
+      "bonus_fin": 50,
+      "accroche": "Ruelles, escaliers et secrets : suis Augustine dans le plus vieux quartier de France.",
+      "intro": "Bonjour, mon petit ! Je m'appelle Augustine. Il y a plus de cent ans, je fabriquais du savon dans les ruelles du Panier. Ici, chaque pierre a une histoire, et les plus belles ne sont écrites nulle part. Cinq balises sont cachées dans le quartier : trouve-les, et je te raconterai ce que les guides oublient de dire.",
+      "conclusion": "Tu as trouvé toutes mes balises ! Tu connais maintenant le Panier mieux que bien des Marseillais. Reviens quand tu veux : ma porte est toujours ouverte… enfin, façon de parler.",
+      "depart": {
+        "nom": "Clocher des Accoules",
+        "indication": "Place Daviel, Marseille 2e, à deux pas de l'Hôtel de Ville et du Vieux-Port.",
+        "lat": 43.2969,
+        "lng": 5.3692,
+        "a_verifier": true
+      },
+      "etapes": [
+        {
+          "id": "panier-accoules",
+          "titre": "Le clocher des Accoules",
+          "indice_lieu": "Cherche une tour solitaire qui a perdu son église. Elle veille encore sur le quartier.",
+          "lat": 43.2969,
+          "lng": 5.3692,
+          "balise": { "id": "panier-accoules", "code": "ACC3" },
+          "enigme": {
+            "type": "qcm",
+            "question": "Ce clocher a survécu tout seul : l'église qui l'entourait a été démolie. À ton avis, à quelle époque ?",
+            "choix": ["Au Moyen Âge", "Après la Révolution française", "Pendant la Seconde Guerre mondiale", "Il y a dix ans"],
+            "bonne_reponse": 1,
+            "indice": "C'est l'époque où l'on a pris la Bastille…",
+            "a_verifier": true
+          },
+          "anecdote": {
+            "titre": "Un clocher sans église",
+            "texte": "Notre-Dame-des-Accoules était l'une des plus anciennes églises de Marseille. Après la Révolution, elle est presque entièrement démolie… mais son clocher médiéval est épargné. Il domine toujours les toits du quartier, comme un vieux gardien qui aurait refusé de partir.",
+            "image": "images/panier-accoules.svg",
+            "a_verifier": true
+          }
+        },
+        {
+          "id": "panier-montee",
+          "titre": "La Montée des Accoules",
+          "indice_lieu": "Monte, monte, monte ! Cherche le long escalier qui grimpe vers le cœur du Panier. La balise attend quelque part sur le chemin.",
+          "lat": 43.2978,
+          "lng": 5.3697,
+          "balise": { "id": "panier-montee", "code": "PAN4" },
+          "enigme": {
+            "type": "qcm",
+            "question": "Le Panier doit son nom à une ancienne enseigne du XVIIe siècle. Laquelle ?",
+            "choix": ["Une auberge, le « Logis du Panier »", "Un marché de paniers en osier", "Un bateau de pêche", "La forme ronde du quartier"],
+            "bonne_reponse": 0,
+            "indice": "Les voyageurs y mangeaient et y dormaient…",
+            "a_verifier": true
+          },
+          "anecdote": {
+            "titre": "D'où vient le nom « Panier » ?",
+            "texte": "Au XVIIe siècle, une auberge à l'enseigne du « Logis du Panier » accueillait les voyageurs dans ces ruelles. Son nom est resté et a fini par désigner tout le quartier. C'est le plus ancien de Marseille : c'est ici que les Grecs se sont installés il y a 2 600 ans.",
+            "image": "images/panier-montee.svg",
+            "a_verifier": true
+          }
+        },
+        {
+          "id": "panier-moulins",
+          "titre": "La place des Moulins",
+          "indice_lieu": "Cherche la place la plus haute du quartier, calme et ombragée. Autrefois, le vent y travaillait dur.",
+          "lat": 43.2989,
+          "lng": 5.3699,
+          "sponsor": "glacier-lulu",
+          "balise": { "id": "panier-moulins", "code": "MLN5" },
+          "enigme": {
+            "type": "texte",
+            "question": "Autrefois, sur cette place perchée, le vent faisait tourner de grandes machines qui transformaient le blé en farine. Comment s'appelaient-elles ?",
+            "reponses_acceptees": ["moulins", "moulin", "moulins à vent", "moulin à vent"],
+            "indice": "Lis bien le nom de la place !",
+            "a_verifier": false
+          },
+          "anecdote": {
+            "titre": "Quand le vent faisait le pain",
+            "texte": "Plusieurs moulins à vent se dressaient ici, sur la butte la plus haute de la vieille ville, pour profiter du mistral. Ils moulaient le blé qui nourrissait les Marseillais. Aujourd'hui, il n'en reste que quelques bases de tours, cachées entre les maisons. Sauras-tu en repérer une ?",
+            "image": "images/panier-moulins.svg",
+            "a_verifier": true
+          }
+        },
+        {
+          "id": "panier-charite",
+          "titre": "La Vieille Charité",
+          "indice_lieu": "Cherche un grand bâtiment aux murs clairs, avec une chapelle coiffée d'un dôme ovale. Ses arcades cachent une cour immense.",
+          "lat": 43.2994,
+          "lng": 5.3674,
+          "balise": { "id": "panier-charite", "code": "PUG7" },
+          "enigme": {
+            "type": "qcm",
+            "question": "Ce chef-d'œuvre a été dessiné par un célèbre architecte et sculpteur né dans le Panier. Qui est-ce ?",
+            "choix": ["Pierre Puget", "Gustave Eiffel", "Le Corbusier", "Léonard de Vinci"],
+            "bonne_reponse": 0,
+            "indice": "Son nom commence par P… comme Panier !",
+            "a_verifier": true
+          },
+          "anecdote": {
+            "titre": "Un hospice devenu musée",
+            "texte": "Construite à partir de 1671 sur les plans de Pierre Puget, la Vieille Charité servait à enfermer les pauvres et les mendiants de la ville. Aujourd'hui, ses trois étages d'arcades abritent des musées et des expositions. Lève les yeux vers la chapelle : son dôme ovale est une rareté !",
+            "image": "images/panier-charite.svg",
+            "a_verifier": true
+          }
+        },
+        {
+          "id": "panier-lenche",
+          "titre": "La place de Lenche",
+          "indice_lieu": "Dernière étape ! Descends vers une place qui regarde la mer. Il y a 2 600 ans, on venait déjà y discuter et commercer.",
+          "lat": 43.2977,
+          "lng": 5.3652,
+          "balise": { "id": "panier-lenche", "code": "LEN8" },
+          "enigme": {
+            "type": "texte",
+            "question": "Les historiens pensent qu'ici se trouvait la grande place publique de la ville grecque, où l'on se réunissait pour débattre et commercer. Quel est son nom grec ?",
+            "reponses_acceptees": ["agora", "l'agora"],
+            "indice": "Ça commence par « A » et ça rime avec « Nora ».",
+            "a_verifier": true
+          },
+          "anecdote": {
+            "titre": "Sur les traces des Grecs",
+            "texte": "La place porte le nom de la famille Lenche, de riches marchands du XVIe siècle qui faisaient commerce du corail. Mais bien avant eux, elle aurait été le cœur de Massalia, son agora. D'ici, regarde vers le Vieux-Port : c'est dans cette calanque naturelle que les premiers navires grecs ont accosté.",
+            "image": "images/panier-lenche.svg",
+            "a_verifier": true
+          }
+        }
+      ]
+    }
+  ]
+}

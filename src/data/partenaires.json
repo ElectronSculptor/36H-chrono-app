@@ -1,0 +1,60 @@
+{
+  "partenaires": [
+    {
+      "id": "office-tourisme",
+      "nom": "Office de tourisme des Quartiers",
+      "type": "Office de tourisme",
+      "description": "Accueil, plans et conseils pour explorer la ville autrement. (Partenaire fictif pour la démo.)",
+      "adresse": "Marseille",
+      "couleur": "#155E8B",
+      "initiales": "OT",
+      "offre_native": {
+        "titre": "Envie d'autres balades ?",
+        "texte": "Passe à l'office de tourisme : plans gratuits et idées de sorties en famille, tout le week-end.",
+        "bouton": "Voir les parcours"
+      }
+    },
+    {
+      "id": "musee-navigateurs",
+      "nom": "Musée des Navigateurs",
+      "type": "Musée",
+      "description": "Cartes anciennes, maquettes de navires et grands voyages en Méditerranée. (Partenaire fictif pour la démo.)",
+      "adresse": "Marseille 2e",
+      "couleur": "#0D2B3E",
+      "initiales": "MN",
+      "offre_native": {
+        "titre": "Prolonge l'aventure au musée",
+        "texte": "À 10 minutes d'ici, embarque pour 2 600 ans d'histoire maritime. -50 % sur ton entrée avec tes points.",
+        "bouton": "Voir l'offre"
+      }
+    },
+    {
+      "id": "glacier-lulu",
+      "nom": "Glacier Chez Lulu",
+      "type": "Glacier",
+      "description": "Glaces artisanales au cœur du Panier : navette, calisson, citron de Menton. (Partenaire fictif pour la démo.)",
+      "adresse": "Le Panier, Marseille 2e",
+      "couleur": "#E3A63B",
+      "initiales": "CL",
+      "offre_native": {
+        "titre": "Une pause bien méritée ?",
+        "texte": "Chez Lulu, au cœur du Panier, ta boule de glace t'attend. Elle est offerte avec tes points !",
+        "bouton": "Voir l'offre"
+      }
+    },
+    {
+      "id": "librairie-boussole",
+      "nom": "Librairie La Boussole",
+      "type": "Librairie",
+      "description": "Livres jeunesse, BD et guides pour petits et grands explorateurs. (Partenaire fictif pour la démo.)",
+      "adresse": "Marseille 1er",
+      "couleur": "#B9573A",
+      "initiales": "LB",
+      "offre_native": {
+        "titre": "Continue l'histoire en livre",
+        "texte": "Romans d'aventure, BD et guides de Marseille : -10 % à La Boussole avec tes points.",
+        "bouton": "Voir l'offre"
+      }
+    }
+  ]
+}

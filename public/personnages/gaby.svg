@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200">
+  <!-- Placeholder : Gaby, le gabian curieux. Remplacez ce fichier par le visuel final (même nom). -->
+  <g stroke="#0D2B3E" stroke-width="5" stroke-linejoin="round" stroke-linecap="round">
+    <path d="M44 204 C42 150 70 120 100 120 C130 120 158 150 156 204 Z" fill="#FFFFFF"/>
+    <path d="M44 204 C40 166 52 140 74 130 C66 160 70 186 80 204 Z" fill="#A9BDCB"/>
+    <path d="M156 204 C160 166 148 140 126 130 C134 160 130 186 120 204 Z" fill="#A9BDCB"/>
+    <path d="M70 124 Q100 142 130 124 L127 138 Q100 154 73 138 Z" fill="#155E8B"/>
+    <circle cx="96" cy="82" r="46" fill="#FFFFFF"/>
+    <path d="M118 84 L170 92 C173 101 163 106 152 104 L116 99 Z" fill="#F2B632"/>
+    <path d="M86 40 Q96 30 108 36" fill="none"/>
+  </g>
+  <circle cx="152" cy="99.5" r="4" fill="#E2462A"/>
+  <circle cx="108" cy="72" r="9.5" fill="#0D2B3E"/>
+  <circle cx="111.5" cy="68.5" r="3.2" fill="#FFFFFF"/>
+  <path d="M95 56 Q108 49 121 56" stroke="#0D2B3E" stroke-width="5" fill="none" stroke-linecap="round"/>
+  <circle cx="84" cy="96" r="7" fill="#F3B6A5" opacity=".7"/>
+</svg>

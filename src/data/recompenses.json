@@ -1,0 +1,42 @@
+{
+  "recompenses": [
+    {
+      "id": "glace-offerte",
+      "titre": "Une boule de glace offerte",
+      "description": "Une boule au choix, en cornet ou en pot.",
+      "partenaire": "glacier-lulu",
+      "cout_points": 80,
+      "validite_heures": 48,
+      "debloquee_par": "hotel-de-region",
+      "conditions": "Valable une fois, sur présentation du coupon."
+    },
+    {
+      "id": "librairie-10",
+      "titre": "-10 % à la librairie",
+      "description": "Sur tout le rayon jeunesse, BD et guides.",
+      "partenaire": "librairie-boussole",
+      "cout_points": 60,
+      "validite_heures": 72,
+      "conditions": "Hors livres scolaires. Valable une fois."
+    },
+    {
+      "id": "musee-50",
+      "titre": "-50 % sur une entrée musée",
+      "description": "Une entrée adulte à moitié prix.",
+      "partenaire": "musee-navigateurs",
+      "cout_points": 120,
+      "validite_heures": 72,
+      "conditions": "Sur présentation du coupon en billetterie."
+    },
+    {
+      "id": "musee-enfant",
+      "titre": "1 entrée enfant offerte pour 2 adultes",
+      "description": "Une sortie en famille au Musée des Navigateurs.",
+      "partenaire": "musee-navigateurs",
+      "cout_points": 200,
+      "validite_heures": 72,
+      "debloquee_par": "panier",
+      "conditions": "Enfant de moins de 14 ans, accompagné de deux adultes payants."
+    }
+  ]
+}

@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200">
+  <!-- Silhouette générique pour les personnages à venir -->
+  <circle cx="100" cy="82" r="42" fill="#0D2B3E"/>
+  <path d="M38 204 C38 150 66 128 100 128 C134 128 162 150 162 204 Z" fill="#0D2B3E"/>
+</svg>

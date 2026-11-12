@@ -1,0 +1,142 @@
+@import 'tailwindcss';
+
+/* Valeurs par défaut : celles de src/config.ts les remplacent au démarrage (src/main.tsx). */
+@theme {
+  --color-mer: #155e8b;
+  --color-mer-clair: #d7e9f3;
+  --color-nuit: #0d2b3e;
+  --color-ocre: #e3a63b;
+  --color-ocre-clair: #f8e7c4;
+  --color-terracotta: #b9573a;
+  --color-terracotta-clair: #f3d9cf;
+  --color-calcaire: #fbf7ef;
+  --color-sable: #f2e8d7;
+  --color-accent: #f2552c;
+  --color-accent-fonce: #d4431d;
+  --color-vert: #2f8a5b;
+  --color-encre: #4b5f6b;
+
+  --font-titre: 'Fredoka Variable', 'Nunito Variable', ui-rounded, system-ui, sans-serif;
+  --font-sans: 'Nunito Variable', ui-rounded, system-ui, -apple-system, sans-serif;
+
+  --radius-carte: 1.5rem;
+
+  --animate-pop: pop 420ms cubic-bezier(0.2, 1.4, 0.4, 1) both;
+  --animate-monte: monte 500ms ease-out both;
+  --animate-secoue: secoue 380ms ease-in-out both;
+  --animate-flotte: flotte 1.4s ease-out both;
+  --animate-respire: respire 5s ease-in-out infinite;
+}
+
+@keyframes pop {
+  0% { transform: scale(0.6); opacity: 0; }
+  100% { transform: scale(1); opacity: 1; }
+}
+@keyframes monte {
+  0% { transform: translateY(16px); opacity: 0; }
+  100% { transform: translateY(0); opacity: 1; }
+}
+@keyframes secoue {
+  0%, 100% { transform: translateX(0); }
+  20% { transform: translateX(-8px); }
+  40% { transform: translateX(8px); }
+  60% { transform: translateX(-5px); }
+  80% { transform: translateX(5px); }
+}
+@keyframes flotte {
+  0% { transform: translateY(0) scale(0.8); opacity: 0; }
+  15% { transform: translateY(-8px) scale(1.1); opacity: 1; }
+  100% { transform: translateY(-60px) scale(1); opacity: 0; }
+}
+@keyframes respire {
+  0%, 100% { transform: scale(1); opacity: 0.35; }
+  50% { transform: scale(1.18); opacity: 0.12; }
+}
+@keyframes chute {
+  0% { transform: translate3d(0, -10vh, 0) rotate(0deg); opacity: 1; }
+  100% { transform: translate3d(var(--dx, 0), 105vh, 0) rotate(var(--rot, 540deg)); opacity: 0.9; }
+}
+
+html {
+  -webkit-tap-highlight-color: transparent;
+  -webkit-text-size-adjust: 100%;
+}
+body {
+  @apply bg-calcaire text-nuit font-sans antialiased;
+  overscroll-behavior-y: none;
+}
+h1, h2, h3, .font-titre {
+  font-family: var(--font-titre);
+  letter-spacing: -0.01em;
+}
+button, a, input, select {
+  touch-action: manipulation;
+}
+:focus-visible {
+  outline: 3px solid var(--color-ocre);
+  outline-offset: 2px;
+}
+
+/* Boutons */
+@utility btn {
+  @apply inline-flex items-center justify-center gap-2 rounded-2xl px-5 py-3.5 font-bold text-base transition active:scale-[0.97] disabled:opacity-50 disabled:active:scale-100;
+}
+@utility btn-accent {
+  @apply btn bg-accent text-white shadow-[0_6px_0_0_var(--color-accent-fonce)] active:shadow-[0_2px_0_0_var(--color-accent-fonce)] active:translate-y-1;
+}
+@utility btn-mer {
+  @apply btn bg-mer text-white shadow-[0_6px_0_0_color-mix(in_oklab,var(--color-mer)_70%,black)] active:shadow-[0_2px_0_0_color-mix(in_oklab,var(--color-mer)_70%,black)] active:translate-y-1;
+}
+@utility btn-ghost {
+  @apply btn bg-white text-nuit ring-2 ring-sable;
+}
+@utility carte {
+  @apply bg-white rounded-[var(--radius-carte)] shadow-[0_2px_0_0_var(--color-sable),0_10px_30px_-18px_rgba(13,43,62,0.35)];
+}
+@utility puce {
+  @apply inline-flex items-center gap-1 rounded-full px-2.5 py-1 text-xs font-bold;
+}
+
+/* Fond texturé discret « calcaire » */
+@utility fond-calcaire {
+  background-color: var(--color-calcaire);
+  background-image: radial-gradient(rgba(185, 87, 58, 0.06) 1px, transparent 1px);
+  background-size: 14px 14px;
+}
+
+/* Leaflet */
+.leaflet-container {
+  font-family: var(--font-sans);
+  border-radius: 1.25rem;
+}
+.marqueur {
+  background: none;
+  border: none;
+}
+
+/* Confettis de victoire */
+.confetti {
+  position: absolute;
+  top: 0;
+  width: 10px;
+  height: 14px;
+  border-radius: 3px;
+  animation: chute var(--duree, 2.6s) cubic-bezier(0.25, 0.6, 0.5, 1) var(--delai, 0s) both;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+
+/* Impression des balises */
+@media print {
+  @page { size: A4; margin: 10mm; }
+  body { background: white !important; }
+  .no-print { display: none !important; }
+  .page-a4 { break-after: page; }
+  .page-a4:last-child { break-after: auto; }
+}
