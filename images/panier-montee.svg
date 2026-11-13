@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500">
+<!-- Image provisoire : remplacez ce fichier par une photo ou une illustration (même nom, ou changez le chemin dans parcours.json). -->
+<rect width="800" height="500" fill="#D7E9F3"/>
+<circle cx="400" cy="90" r="46" fill="#E3A63B"/><circle cx="400" cy="90" r="72" fill="#E3A63B" opacity=".18"/>
+<g stroke="#0D2B3E" stroke-width="5" stroke-linejoin="round">
+<path d="M0 0 L250 0 L250 500 L0 500Z" fill="#F3D9CF"/>
+<path d="M550 0 L800 0 L800 500 L550 500Z" fill="#F8E7C4"/>
+<rect x="60" y="80" width="60" height="80" rx="6" fill="#D7E9F3"/><rect x="60" y="240" width="60" height="80" rx="6" fill="#D7E9F3"/>
+<rect x="640" y="60" width="60" height="80" rx="6" fill="#D7E9F3"/><rect x="640" y="220" width="60" height="80" rx="6" fill="#D7E9F3"/>
+<path d="M250 500 L550 500 L550 470 L250 470Z" fill="#F2E2C6"/><path d="M262 466 L538 466 L538 436 L262 436Z" fill="#E6D3B5"/><path d="M274 432 L526 432 L526 402 L274 402Z" fill="#F2E2C6"/><path d="M286 398 L514 398 L514 368 L286 368Z" fill="#E6D3B5"/><path d="M298 364 L502 364 L502 334 L298 334Z" fill="#F2E2C6"/><path d="M310 330 L490 330 L490 300 L310 300Z" fill="#E6D3B5"/><path d="M322 296 L478 296 L478 266 L322 266Z" fill="#F2E2C6"/><path d="M334 262 L466 262 L466 232 L334 232Z" fill="#E6D3B5"/><path d="M346 228 L454 228 L454 198 L346 198Z" fill="#F2E2C6"/>
+</g>
+<path d="M140 20 C170 60 150 90 180 120" stroke="#6E8F4E" stroke-width="10" fill="none" stroke-linecap="round"/>
+<circle cx="150" cy="40" r="14" fill="#E07A9B"/><circle cx="176" cy="98" r="12" fill="#E07A9B"/>
+
+</svg>

@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500">
+<!-- Image provisoire : remplacez ce fichier par une photo ou une illustration (même nom, ou changez le chemin dans parcours.json). -->
+<rect width="800" height="500" fill="#F8E7C4"/>
+<circle cx="170" cy="150" r="64" fill="#E3A63B"/><circle cx="170" cy="150" r="90" fill="#E3A63B" opacity=".18"/><path d="M0 350 C120 336 220 364 340 350 S580 336 800 352 V500 H0Z" fill="#155E8B"/>
+<path d="M60 390 q20 -10 40 0 t40 0 M420 410 q20 -10 40 0 t40 0 M640 380 q20 -10 40 0 t40 0" stroke="#fff" stroke-width="5" fill="none" stroke-linecap="round" opacity=".35"/>
+<path d="M380 120 L380 330" stroke="#0D2B3E" stroke-width="7"/>
+<path d="M386 132 C470 160 500 250 386 300Z" fill="#fff" stroke="#0D2B3E" stroke-width="5" stroke-linejoin="round"/>
+<path d="M386 190 C440 196 460 226 450 250 L386 252Z" fill="#B9573A" opacity=".85"/>
+<path d="M230 330 L560 330 L520 392 L262 392Z" fill="#B9573A" stroke="#0D2B3E" stroke-width="5" stroke-linejoin="round"/>
+<path d="M560 330 C590 316 600 296 596 282" stroke="#0D2B3E" stroke-width="6" fill="none" stroke-linecap="round"/>
+<circle cx="290" cy="356" r="9" fill="#fff" stroke="#0D2B3E" stroke-width="3"/>
+<path d="M300 392 l-22 46 M350 392 l-22 46 M400 392 l-22 46 M450 392 l-22 46 M500 392 l-22 46" stroke="#0D2B3E" stroke-width="5" stroke-linecap="round"/>
+
+</svg>

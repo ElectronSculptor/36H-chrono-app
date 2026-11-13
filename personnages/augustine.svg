@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200">
+  <!-- Placeholder : Augustine, la savonnière du Panier. Remplacez ce fichier par le visuel final (même nom). -->
+  <g stroke="#0D2B3E" stroke-width="5" stroke-linejoin="round" stroke-linecap="round">
+    <path d="M38 204 C38 152 66 130 100 130 C134 130 162 152 162 204 Z" fill="#155E8B"/>
+    <path d="M76 134 L100 164 L124 134 Z" fill="#FBF7EF"/>
+    <path d="M70 204 L72 168 L128 168 L130 204" fill="#FBF7EF"/>
+    <rect x="88" y="112" width="24" height="24" fill="#E8B08C"/>
+    <ellipse cx="100" cy="84" rx="38" ry="42" fill="#F1C3A0"/>
+    <path d="M56 90 C50 42 76 28 100 28 C126 28 152 42 144 90 C138 66 122 54 100 54 C78 54 62 66 56 90 Z" fill="#B9573A"/>
+    <path d="M140 66 L164 56 L158 82 Z" fill="#B9573A"/>
+    <rect x="86" y="178" width="28" height="18" rx="3" fill="#F8E7C4"/>
+  </g>
+  <circle cx="82" cy="42" r="3.2" fill="#F8E7C4"/>
+  <circle cx="100" cy="38" r="3.2" fill="#F8E7C4"/>
+  <circle cx="118" cy="42" r="3.2" fill="#F8E7C4"/>
+  <circle cx="72" cy="56" r="3.2" fill="#F8E7C4"/>
+  <circle cx="128" cy="56" r="3.2" fill="#F8E7C4"/>
+  <circle cx="86" cy="86" r="4.8" fill="#0D2B3E"/>
+  <circle cx="114" cy="86" r="4.8" fill="#0D2B3E"/>
+  <path d="M79 76 Q86 72 92 76 M108 76 Q114 72 121 76" stroke="#0D2B3E" stroke-width="3.5" fill="none" stroke-linecap="round"/>
+  <circle cx="77" cy="101" r="6.5" fill="#E88F73" opacity=".55"/>
+  <circle cx="123" cy="101" r="6.5" fill="#E88F73" opacity=".55"/>
+  <path d="M88 104 Q100 115 112 104" stroke="#0D2B3E" stroke-width="4" fill="none" stroke-linecap="round"/>
+  <text x="100" y="191.5" font-family="Verdana, sans-serif" font-size="9" font-weight="700" text-anchor="middle" fill="#B9573A">72%</text>
+</svg>

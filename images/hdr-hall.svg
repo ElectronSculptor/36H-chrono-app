@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500">
+<!-- Image provisoire : remplacez ce fichier par une photo ou une illustration (même nom, ou changez le chemin dans parcours.json). -->
+<rect width="800" height="500" fill="#D7E9F3"/>
+<circle cx="600" cy="120" r="56" fill="#E3A63B"/><circle cx="600" cy="120" r="82" fill="#E3A63B" opacity=".18"/>
+<path d="M-20 360 L120 150 L190 250 L280 120 L420 360Z" fill="#155E8B" stroke="#0D2B3E" stroke-width="5" stroke-linejoin="round"/>
+<path d="M120 150 L150 195 L132 190 L112 205 L96 186Z M280 120 L314 172 L292 166 L272 182 L254 160Z" fill="#fff" stroke="#0D2B3E" stroke-width="4" stroke-linejoin="round"/>
+<path d="M300 380 C380 300 470 290 560 330 S720 300 820 330 V500 H300Z" fill="#E3A63B" stroke="#0D2B3E" stroke-width="5"/>
+<path d="M-10 420 C140 380 260 430 420 410 S700 400 820 420 V500 H-10Z" fill="#B9573A" stroke="#0D2B3E" stroke-width="5"/>
+<path d="M0 450 C120 436 220 464 340 450 S580 436 800 452 V500 H0Z" fill="#155E8B"/>
+<path d="M60 490 q20 -10 40 0 t40 0 M420 510 q20 -10 40 0 t40 0 M640 480 q20 -10 40 0 t40 0" stroke="#fff" stroke-width="5" fill="none" stroke-linecap="round" opacity=".35"/>
+</svg>
